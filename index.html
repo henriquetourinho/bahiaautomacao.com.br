@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahia Automação | Sistemas, SaaS e Sites</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        :root {
+            --apple-gray: #f5f5f7;
+            --apple-blue: #0071e3;
+            --apple-text: #1d1d1f;
+            --apple-subtext: #86868b;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #ffffff;
+            color: var(--apple-text);
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .nav-blur {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: saturate(180%) blur(20px);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .hero-title {
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+        }
+
+        .btn-apple {
+            background-color: var(--apple-blue);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 980px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .btn-apple:hover {
+            background-color: #0077ed;
+            transform: scale(1.02);
+        }
+
+        .link-apple {
+            color: var(--apple-blue);
+            font-weight: 400;
+            display: inline-flex;
+            items-center: center;
+        }
+
+        .link-apple:hover {
+            text-decoration: underline;
+        }
+
+        .card-apple {
+            background: var(--apple-gray);
+            border-radius: 24px;
+            padding: 40px;
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-apple:hover {
+            transform: scale(1.01);
+        }
+
+        .section-padding {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+
+        .ntxa-tag {
+            font-weight: 600;
+            color: var(--apple-text);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 nav-blur">
+        <div class="container mx-auto px-6 h-12 flex justify-between items-center">
+            <div class="text-lg font-semibold tracking-tight">
+                Bahia Automação
+            </div>
+            <div class="hidden md:flex space-x-8 text-xs font-normal text-gray-600">
+                <a href="#inicio" class="hover:text-black transition">Início</a>
+                <a href="#solucoes" class="hover:text-black transition">Soluções</a>
+                <a href="#tecnologia" class="hover:text-black transition">Tecnologia</a>
+                <a href="#contato" class="hover:text-black transition">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-32 pb-20 overflow-hidden">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-4 animate-fade-in">
+                <span class="ntxa-tag text-sm uppercase tracking-widest">Empresa NTXA</span>
+            </div>
+            <h1 class="hero-title text-5xl md:text-7xl font-bold mb-6 max-w-4xl mx-auto">
+                Sistemas, SaaS e Sites.<br>Para todos, em todo lugar.
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-500 mb-10 max-w-2xl mx-auto font-normal">
+                Criamos soluções digitais de alta performance que atendem desde startups até grandes corporações. Simplicidade no design, potência na execução.
+            </p>
+            <div class="flex justify-center space-x-6">
+                <a href="#contato" class="btn-apple">Começar agora</a>
+                <a href="#solucoes" class="link-apple text-lg flex items-center">
+                    Ver soluções <i class="fas fa-chevron-right ml-2 text-sm"></i>
+                </a>
+            </div>
+            <div class="mt-20 max-w-5xl mx-auto">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200" alt="Interface Limpa" class="rounded-3xl shadow-2xl border border-gray-100">
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solucoes" class="section-padding bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card-apple flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-3xl font-bold mb-4">SaaS de Próxima Geração</h3>
+                        <p class="text-gray-500 text-lg mb-6">Desenvolvemos plataformas Software as a Service escaláveis, focadas na experiência do usuário e na eficiência operacional.</p>
+                    </div>
+                    <i class="fas fa-cloud-upload-alt text-4xl text-blue-500"></i>
+                </div>
+                <div class="card-apple flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-3xl font-bold mb-4">Sistemas sob Demanda</h3>
+                        <p class="text-gray-500 text-lg mb-6">Automatizamos processos complexos com softwares personalizados que resolvem problemas reais do seu dia a dia.</p>
+                    </div>
+                    <i class="fas fa-cogs text-4xl text-gray-400"></i>
+                </div>
+                <div class="card-apple md:col-span-2 flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <h3 class="text-3xl font-bold mb-4">Sites que Convertem</h3>
+                        <p class="text-gray-500 text-lg mb-6">Presença digital marcante para todos os públicos. Sites rápidos, responsivos e com design impecável.</p>
+                        <a href="#contato" class="link-apple text-lg">Solicitar projeto <i class="fas fa-chevron-right ml-2 text-sm"></i></a>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=600" alt="Web Design" class="rounded-2xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Section -->
+    <section id="tecnologia" class="section-padding bg-[#fbfbfd]">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-16">Tecnologia de ponta. Sem complicações.</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+                <div>
+                    <div class="text-4xl mb-4"><i class="fab fa-linux"></i></div>
+                    <h4 class="font-semibold">Linux & Debian</h4>
+                    <p class="text-sm text-gray-500 mt-2">Infraestrutura sólida e segura.</p>
+                </div>
+                <div>
+                    <div class="text-4xl mb-4"><i class="fas fa-database"></i></div>
+                    <h4 class="font-semibold">SQL Expert</h4>
+                    <p class="text-sm text-gray-500 mt-2">Dados organizados e performantes.</p>
+                </div>
+                <div>
+                    <div class="text-4xl mb-4"><i class="fas fa-code"></i></div>
+                    <h4 class="font-semibold">Sistemas Web</h4>
+                    <p class="text-sm text-gray-500 mt-2">Código limpo e escalável.</p>
+                </div>
+                <div>
+                    <div class="text-4xl mb-4"><i class="fas fa-shield-alt"></i></div>
+                    <h4 class="font-semibold">Segurança</h4>
+                    <p class="text-sm text-gray-500 mt-2">Proteção em todas as camadas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="section-padding bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold mb-4">Vamos conversar.</h2>
+                <p class="text-xl text-gray-500">Dê o próximo passo na automação do seu negócio.</p>
+            </div>
+            <div class="bg-white border border-gray-200 rounded-3xl p-8 md:p-12 shadow-sm">
+                <form id="contactForm" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <input type="text" placeholder="Nome completo" class="w-full bg-gray-50 border-none rounded-xl px-5 py-4 focus:ring-2 focus:ring-blue-500 transition outline-none" required>
+                        <input type="email" placeholder="E-mail profissional" class="w-full bg-gray-50 border-none rounded-xl px-5 py-4 focus:ring-2 focus:ring-blue-500 transition outline-none" required>
+                    </div>
+                    <select class="w-full bg-gray-50 border-none rounded-xl px-5 py-4 focus:ring-2 focus:ring-blue-500 transition outline-none text-gray-500">
+                        <option value="">O que você precisa?</option>
+                        <option value="saas">Desenvolvimento SaaS</option>
+                        <option value="sistema">Sistema sob Demanda</option>
+                        <option value="site">Criação de Site</option>
+                        <option value="outro">Outros serviços</option>
+                    </select>
+                    <textarea placeholder="Como podemos ajudar?" rows="5" class="w-full bg-gray-50 border-none rounded-xl px-5 py-4 focus:ring-2 focus:ring-blue-500 transition outline-none" required></textarea>
+                    <div class="text-center">
+                        <button type="submit" class="btn-apple w-full md:w-auto px-12 py-4 text-lg">Enviar mensagem</button>
+                    </div>
+                </form>
+                <div class="mt-12 pt-8 border-t border-gray-100 text-center">
+                    <p class="text-gray-500 mb-2">Ou envie um e-mail diretamente para:</p>
+                    <a href="mailto:ba@ntxa.xyz" class="text-2xl font-semibold text-blue-600 hover:underline">ba@ntxa.xyz</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-[#fbfbfd] border-t border-gray-200">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <span class="font-bold text-lg">Bahia Automação</span>
+                    <span class="mx-2 text-gray-300">|</span>
+                    <span class="text-gray-500">Empresa NTXA</span>
+                </div>
+                <div class="text-gray-400 text-sm">
+                    &copy; 2026 Bahia Automação. Todos os direitos reservados.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Form handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const btn = this.querySelector('button');
+            btn.innerText = 'Enviando...';
+            btn.style.opacity = '0.7';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                alert('Mensagem enviada com sucesso. Entraremos em contato em breve.');
+                btn.innerText = 'Enviar mensagem';
+                btn.style.opacity = '1';
+                btn.disabled = false;
+                this.reset();
+            }, 1500);
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 50,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
